@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800&family=Oswald:wght@300;400;500;600;700&display=swap');
+
+
+
+:root{
+    --barlow:font-family: 'Barlow Condensed', sans-serif;
+    --oswald:font-family: 'Oswald', sans-serif;
+    --grey:#DDDDDD;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul,ol,menu{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+h1,h2,h3,h4,h5,h6,p{
+    line-height: .8;
+}
+.container{
+    width: 1320px;
+    margin: 0 auto;
+}
+/* ==================Navbar section================= */
+.navbar{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 20px 0;
+    background: #000000;
+}
+.navbar_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav_left{
+    display: flex;
+    column-gap: 60px;
+}
+.nav_left menu{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.nav_left menu li a{
+    color: var(--grey);
+    font-family: Oswald;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+.nav_right{
+    display: flex;
+    gap: 30px;
+}
+.nav_right a{
+    color: var(--grey);
+    font-family: Oswald;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
