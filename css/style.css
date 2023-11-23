@@ -6,6 +6,7 @@
     --barlow:font-family: 'Barlow Condensed', sans-serif;
     --oswald:font-family: 'Oswald', sans-serif;
     --grey:#DDDDDD;
+    --white:#ffffff
 }
 *{
     padding: 0;
@@ -66,4 +67,42 @@ h1,h2,h3,h4,h5,h6,p{
     font-size: 16px;
     font-weight: 400;
     line-height: normal;
+}
+/* ==================banner section=================== */
+#banner{
+    padding: 236px 0 204px;
+}
+.banner_content h6{
+    color: var(--white);
+    font-family: Oswald;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.7px;
+}
+.banner_content h1{
+    color: var(--white);
+    font-family: Oswald;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: normal;
+}
+.banner_content p{
+    width: 523px;
+    color: var(--white);
+    font-family: Oswald;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    padding: 5px 0 48px;
+}
+.banner_content a{
+    background: var(--white);
+    color: #121212;
+    font-family: Oswald;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 13px 24px;
 }
