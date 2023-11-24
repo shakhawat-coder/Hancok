@@ -311,9 +311,7 @@ h1,h2,h3,h4,h5,h6,p{
     display: flex;
     justify-content: end;
 }
-.slider_section{
-    position: relative;
-}
+
 #popular_game .section_header h2::before{
     position: absolute;
     content: "";
@@ -322,6 +320,9 @@ h1,h2,h3,h4,h5,h6,p{
     left: 200px;
     height: 3px;
     background: var(--pink);
+}
+.slider_section{
+    position: relative;
 }
 .game_wrapper{
     display: flex;
@@ -360,4 +361,178 @@ h1,h2,h3,h4,h5,h6,p{
 .next{
     right: 0;
     bottom: 100px;
+}
+/* ==================Tournament section==================  */
+
+#tournament{
+    background: var(--black);
+    padding: 90px 0;
+}
+#tournament .section_header h2::after{
+    position: absolute;
+    content: "";
+    width: 120px;
+    bottom: 70px;
+    right: 200px;
+    height: 3px;
+    background: var(--pink);
+}
+.video_wrapper{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+.video_item{
+    overflow: hidden;
+    height: 275px;
+    position: relative;
+}
+.video_item .play{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+    color: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.video_item .video_content{
+    position: absolute;
+    left: 25px;
+    bottom:  23px;
+    display: flex;
+    column-gap: 100px;
+    align-items: end;
+    justify-content: space-between;
+}
+.video_title h6{
+    color: var(--white);
+    font-family: var(--barlow);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: normal;
+}
+.video_title p{
+    color: var(--white);
+    font-family: var(--oswald);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.96px;
+    padding-top: 6px;
+}
+.video_status{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+.video_status p{
+    position: relative;
+    color: #FFF;
+    font-family: var(--oswald);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+.video_status p::before{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: -10px;
+    height: 5px;
+    width: 5px;
+    background: var(--pink);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.match_feature h6{
+    color: var(--white);
+    text-align: center;
+    padding: 50px 0 22px;
+    font-family: var(--barlow);
+    font-size: 25px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2.25px;
+}
+.match_feature_wrapper{
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.match_feature_wrapper .time h5{
+    color: var(--white);
+    font-family: var(--barlow);
+    font-size: 32px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.96px;
+}
+.team{
+    padding: 10px 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 426px;
+    background: var(--lightblack);
+    z-index: 1;
+}
+.team1::after{
+    z-index: -1;
+    background: var(--lightblack);
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0;
+    position: absolute;
+    content: "";
+    transform-origin:  bottom;
+    transform: skew(-20deg);
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -ms-transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+}
+.team2::after{
+    z-index: -1;
+    background: var(--lightblack);
+    width: 100%;
+    height: 100%;
+    right: 0px;
+    top: 0;
+    position: absolute;
+    content: "";
+    transform-origin:  bottom;
+    transform: skew(20deg);
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -ms-transform: skew(20deg);
+    -o-transform: skew(20deg);
+}
+.team h5{
+    color: var(--white);
+    font-family: var(--barlow);
+    font-size: 32px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.96px;
 }
