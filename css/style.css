@@ -357,11 +357,11 @@ h1,h2,h3,h4,h5,h6,p{
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
-.prev{
+#popular_game .prev{
     right: 0;
     bottom: 40px;
 }
-.next{
+#popular_game .next{
     right: 0;
     bottom: 100px;
 }
@@ -677,4 +677,86 @@ h1,h2,h3,h4,h5,h6,p{
 .catalog_content .btn{
     background: var(--black);
     color: var(--white);
+}
+
+ /* ==================Store section==================  */
+ #store{
+    background: var(--black);
+    padding: 90px;
+ }
+ #store .section_header h2::after{
+    position: absolute;
+    content: "";
+    width: 120px;
+    bottom: 0;
+    height: 3px;
+    background: var(--pink);
+}
+.store_slider{
+    position: relative;
+}
+.store_slider .store_wrapper{
+    padding-top: 100px;
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+.store_slider .store_wrapper .store_item{
+    width: 315px;
+    background: var(--lightblack);
+    padding: 22px 0;
+}
+.store_slider .store_wrapper .store_item h4{
+    color: var(--white);
+    text-align: center;
+    font-family: var(--oswald);
+    font-size: 40px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.4px;
+}
+.store_slider .store_wrapper .store_item .product_img{
+    padding: 7px 0 45px;
+    width: 240px;
+    height: 240px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.store_slider .store_wrapper .store_item .product_img img{
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+.store_slider .store_wrapper .store_item .Product_name{
+    color: var(--white);
+    text-align: center;
+    font-family: Oswald;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: block;
+    padding-bottom: 7px;
+}
+.store_slider .store_wrapper .store_item .cart_add{
+    color: var(--pink);
+    display: block;
+    text-align: center;
+    font-family: var(--oswald);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.store_slider .prev,.store_slider .next{
+    background: var(--pink);
+}
+.store_slider .prev{
+    bottom: 190px;
+    left: -20px;
+
+}
+.store_slider .next{
+    bottom: 190px;
+    right: -20px;
 }
