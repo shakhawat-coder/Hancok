@@ -140,7 +140,7 @@ h1,h2,h3,h4,h5,h6,p{
     background: var(--white);
     color: #121212;
 }
-.social{
+.banner_social{
     display: flex;
     column-gap: 20px;
     padding-top: 300px;
@@ -306,16 +306,16 @@ h1,h2,h3,h4,h5,h6,p{
     padding: 115px 0 90px;
     
 }
-#popular_game .section_header,#sale .section_header{
+#popular_game .section_header,#sale .section_header,#team .section_header{
     text-align: right;
     display: flex;
     justify-content: end;
     
 }
-#popular_game .section_header h2,#sale .section_header h2{
+#popular_game .section_header h2,#sale .section_header h2,#team .section_header h2{
     width: 554px;
 }
-#popular_game .section_header h2::before,#sale .section_header h2::before{
+#popular_game .section_header h2::before,#sale .section_header h2::before,#team .section_header h2::before{
     position: absolute;
     content: "";
     width: 120px;
@@ -759,4 +759,78 @@ h1,h2,h3,h4,h5,h6,p{
 .store_slider .next{
     bottom: 190px;
     right: -20px;
+}
+
+ /* ==================Team section==================  */
+#team{
+    background: #212121;
+    padding: 100px 0 74px;
+}
+.team_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.team_wrapper .team_member{
+    position: relative;
+    overflow: hidden;
+    width: 650px;
+}
+.team_wrapper .team_member .member_img{
+    width: 650px;
+    height: 428px;
+    overflow: hidden;
+}
+.team_wrapper .team_member .member_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.team_wrapper .team_member .member_info{
+    background: rgba(37, 36, 36, 0.38);
+    width: 100%;
+    position: absolute;
+    padding: 20px;
+    bottom: -145px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.team_wrapper .team_member:hover .member_info{
+    bottom: 0;
+}
+.team_wrapper .team_member .member_info h2{
+    color: var(--white);
+    font-family: var(--barlow);
+    font-size: 30px;
+    font-weight: 600;
+    line-height: normal;
+}
+.team_wrapper .team_member .member_info p{
+    color: var(--white);
+    font-family: var(--oswald);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    width: 300px;
+    padding: 15px 0 20px;
+}
+.team_wrapper .team_member .member_info .btn{
+    background: var(--pink);
+    color: var(--white);
+}
+.member_social{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.member_social .social{
+    display: flex;
+    column-gap: 20px;
+}
+.member_social .social a{
+    background: var(--pink);
+    color: var(--white);
 }
