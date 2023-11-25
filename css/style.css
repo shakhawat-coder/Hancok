@@ -834,3 +834,144 @@ h1,h2,h3,h4,h5,h6,p{
     background: var(--pink);
     color: var(--white);
 }
+ /* ==================Faq section==================  */
+#faq{
+    position: relative;
+    background: var(--black);
+    padding: 55px 0 200px;
+}
+#faq .section_header h2{
+    width: 530px;
+    margin-bottom: 92px;
+}
+#faq .section_header h2::after{
+    position: absolute;
+    content: "";
+    width: 120px;
+    bottom: 0;
+    height: 3px;
+    background: var(--pink);
+}
+.faq_wrapper{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 156px;
+}
+.faq_wrapper::before{
+    position: absolute;
+    content: "";
+    background: var(--lightblack);
+    height: 370px;
+    width: 1px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+.faq_wrapper::after{
+    position: absolute;
+    content: "";
+    background: var(--lightblack);
+    height: 1px;
+    width: 1320px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+.faq_wrapper .faq_item{
+    display: flex;
+    column-gap: 42px;
+    width: 540px;
+}
+
+.faq_wrapper .faq_item span{
+    height: 70px;
+    width: 70px;
+    background: var(--pink);
+    color: var(--white);
+    font-family: var(--barlow);
+    font-size: 38px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 3.8px;
+    padding: 7px 30px 17px;
+}
+.faq_wrapper .faq_item h6{
+    color: var(--white);
+    font-family: var(--barlow);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 10px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.faq_wrapper .faq_item h6:hover{
+    color: var(--pink);
+}
+.faq_wrapper .faq_item p{
+    color: #666;
+    font-family: var(--oswald);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+.subscribe_section{
+    position: relative;
+}
+#faq .subscribe{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1320px;
+    bottom: -250px;
+    left: 0;
+    background: var(--pink);
+    padding: 35px 30px;
+
+}
+#faq .subscribe h3{
+    color: var(--white);
+    width: 725px;
+    font-family: var(--barlow);
+    font-size: 30px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.email{
+    position: relative;
+}
+.subscribe input{
+    width: 409px;
+    border: none;
+    height: 40px;
+    border-radius: 30px;
+    background: var(--white);
+    outline: unset;
+    padding: 0 20px;
+}
+.subscribe button{
+    cursor: pointer;
+    position: absolute;
+    border: none;
+    right: 0;
+    width: 117px;
+    height: 40px;
+    border-radius: 30px;
+    color: var(--white);
+    background: var(--black);
+}
